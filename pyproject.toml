@@ -1,0 +1,21 @@
+[project]
+name = "cli-intro"
+version = "0.1.0"
+description = "CLI introduction application using click, rich, and pyfiglet"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click",
+    "rich",
+    "pyfiglet",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-mock"]
+
+[tool.ruff]
+line-length = 88
+
+[build-system]
+requires = ["setuptools>=67"]
+build-backend = "setuptools.build_meta"
